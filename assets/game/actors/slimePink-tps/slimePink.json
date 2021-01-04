@@ -1,0 +1,27 @@
+{
+  "texturepacker": 1,
+  "atlases": [
+    {
+      "image": "slimePink.png",
+      "items": [
+        {
+          "name": "slimeDead",
+          "frame": [2,2,59,12],
+          "pivot": [29.5,6]
+        },
+        {
+          "name": "slimeWalk2",
+          "frame": [2,16,51,26],
+          "pivot": [25.5,13]
+        },
+        {
+          "name": "slimeWalk1",
+          "frame": [2,44,50,28],
+          "pivot": [25,14]
+        }
+        
+      ]
+    }
+    
+  ]
+}

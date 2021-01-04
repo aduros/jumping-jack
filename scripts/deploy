@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+2dk build html5
+
+rsync -avz --delete build/html5/ aduros:web/jumping-jack/

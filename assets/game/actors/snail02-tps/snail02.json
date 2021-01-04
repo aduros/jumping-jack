@@ -1,0 +1,32 @@
+{
+  "texturepacker": 1,
+  "atlases": [
+    {
+      "image": "snail02.png",
+      "items": [
+        {
+          "name": "snailWalk2",
+          "frame": [2,2,57,31],
+          "pivot": [28.5,15.5]
+        },
+        {
+          "name": "snailWalk1",
+          "frame": [61,2,54,31],
+          "pivot": [27,15.5]
+        },
+        {
+          "name": "snailShell",
+          "frame": [2,35,44,30],
+          "pivot": [22,15]
+        },
+        {
+          "name": "snailShell_upsidedown",
+          "frame": [2,67,44,30],
+          "pivot": [22,15]
+        }
+        
+      ]
+    }
+    
+  ]
+}

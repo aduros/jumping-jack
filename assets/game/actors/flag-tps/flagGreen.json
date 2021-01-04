@@ -1,0 +1,27 @@
+{
+  "texturepacker": 1,
+  "atlases": [
+    {
+      "image": "flagGreen.png",
+      "items": [
+        {
+          "name": "flagGreen-wave1",
+          "frame": [2,2,70,70],
+          "pivot": [35,35]
+        },
+        {
+          "name": "flagGreen-wave2",
+          "frame": [2,74,70,70],
+          "pivot": [35,35]
+        },
+        {
+          "name": "flagGreenHanging",
+          "frame": [2,146,70,70],
+          "pivot": [35,35]
+        }
+        
+      ]
+    }
+    
+  ]
+}

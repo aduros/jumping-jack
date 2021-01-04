@@ -1,0 +1,15 @@
+{
+	"haxe.configurations": [
+		[
+			"build.hxml"
+		]
+	],
+	"haxe.buildCompletionCache": false,
+	"haxe.exclude": [
+		"kit.platform",
+		"kit.js.types"
+	],
+	"files.exclude": {
+		"build/": true
+	}
+}

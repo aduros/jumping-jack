@@ -1,0 +1,112 @@
+# Basic information about the game.
+name: Jumping Jack
+description: An old-school platformer game.
+
+# Information about the game developer.
+developer:
+  name: Bruno Garcia
+  url: http://aduros.com
+
+# The game's unique identifier.
+id: com.aduros.jumpingjack
+
+# The game's version string.
+version: 1.0.0
+
+# The main class name.
+main: jack.Main
+
+# The platform to use when invoking `run` or `build` with no arguments. Platforms include html5,
+# flash, android, ios, etc. For a full list of platforms, see `2dk help build`.
+default_platform: html5
+
+# The preferred window size when running on the desktop. Note that this is only a *suggested* size.
+# You should design your game to scale to as many different sizes as possible.
+width: 1024
+height: 768
+
+max_width: 1024
+max_height: 768
+scale_mode: letterbox
+
+# The initial orientation and fullscreen state on mobile devices.
+orientation: landscape
+fullscreen: true
+
+# Additional flags to pass to the Haxe compiler.
+# haxe_flags: -lib nape -D foobar
+
+# Additional paths to include in the build.
+# extra_paths:
+#   assets: dir1 dir2
+#   libs: dir1 dir2
+#   src: ../dir1 ../dir2
+#   platforms: ["dir1 with spaces", "dir2"]
+
+# Map files to open in Tiled when this project is opened
+open_creator: assets/game/Game.scene
+
+# Facebook Instant Games configuration.
+fbinstant:
+  # The application ID (required), obtainable from the dashboard: https://developers.facebook.com/apps/
+  # app_id: 1234567890
+
+  # The asset upload access token for automated publishing, obtainable from https://developers.facebook.com/apps/{APP_ID}/hosting/
+  # upload_token: ABCDEF12345
+
+  # The Instant Games SDK version to use, defaults to the latest.
+  # sdk_version: 6.1
+
+  # Bundle configuration: https://developers.facebook.com/docs/games/instant-games/bundle-config
+  # fbapp-config.json:
+  #   {
+  #     "instant_games": {
+  #       "platform_version": "RICH_GAMEPLAY",
+  #       "custom_update_templates": {
+  #         "first_place": {
+  #           "example": "Player X just became the first place in game Y!",
+  #         }
+  #       },
+  #       "surfaceable_stats": {
+  #         "rank": {
+  #         "priority": 1,
+  #         "order": 1,
+  #           "label": {
+  #             "localizations": {
+  #               "en_US": "Rank",
+  #               "th_TH": "\u0E22\u0E28",
+  #             },
+  #             "fallback": "Rank"
+  #           },
+  #           "values": {
+  #             "0": "Unranked",
+  #             "1": "Bronze",
+  #             "2": "Silver",
+  #             "3": "Gold",
+  #           }
+  #         }
+  #       }
+  #     }
+  #   }
+
+# Android-specific configuration.
+android:
+  # https://developer.android.com/guide/topics/manifest/manifest-intro.html
+  AndroidManifest.xml: |
+    <manifest android:installLocation="auto">
+      <uses-permission android:name="android.permission.INTERNET" />
+    </manifest>
+
+# iOS-specific configuration.
+ios:
+  # http://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference
+  Info.plist: |
+    <key>UIDeviceFamily</key>
+    <array>
+      <string>1</string>
+      <string>2</string>
+    </array>
+    <key>UIPrerenderedIcon</key>
+    <true/>
+  # The password for certs/ios-development.p12
+  password: password

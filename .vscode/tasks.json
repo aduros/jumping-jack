@@ -1,0 +1,463 @@
+{
+	"version": "2.0.0",
+	"command": "2dk",
+	"type": "shell",
+	"presentation": {
+		"reveal": "silent"
+	},
+	"tasks": [
+		{
+			"label": "2DKit: run",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"--debug",
+				"--no-fdb"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "2DKit: run (release)",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run HTML5",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"html5",
+				"--debug",
+				"--no-fdb"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run HTML5 (release)",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"html5"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run Android",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"android",
+				"--debug",
+				"--no-fdb"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run Android (release)",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"android"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run iOS",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"ios",
+				"--debug",
+				"--no-fdb"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run iOS (release)",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"ios"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run iOS Simulator",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"ios-simulator",
+				"--debug",
+				"--no-fdb"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run iOS Simulator (release)",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"ios-simulator"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run Facebook Instant",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"fbinstant",
+				"--debug",
+				"--no-fdb"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: run Facebook Instant (release)",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"run",
+				"fbinstant"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: build HTML5",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"build",
+				"html5",
+				"--debug"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: publish Facebook Instant Game",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"publish",
+				"fbinstant"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: publish Facebook Playable Ad",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"optimize",
+				"facebook-ad"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: publish Google Ad",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"optimize",
+				"google-ad"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: publish MRAID Playable Ad",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"optimize",
+				"mraid-ad",
+				"dapi-ad"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: publish CrossInstall Playable Ad",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"optimize",
+				"crossinstall-ad"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		},
+		{
+			"label": "2DKit: publish TikTok Playable Ad",
+			"command": "2dk",
+			"args": [
+				"--config",
+				"${workspaceRoot}/2DKit.yaml",
+				"optimize",
+				"tiktok-ad"
+			],
+			"problemMatcher": {
+				"owner": "2dk",
+				"pattern": {
+					"regexp": "^(.+):(\\d+): (?:lines \\d+-(\\d+)|character(?:s (\\d+)-| )(\\d+)) : (?:(Warning) : )?(.*)$",
+					"file": 1,
+					"line": 2,
+					"endLine": 3,
+					"column": 4,
+					"endColumn": 5,
+					"severity": 6,
+					"message": 7
+				}
+			}
+		}
+	]
+}

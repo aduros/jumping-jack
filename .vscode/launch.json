@@ -1,0 +1,12 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "chrome",
+			"request": "launch",
+			"name": "2DKit: debug HTML5",
+			"url": "http://localhost:9000/html5",
+			"preLaunchTask": "2DKit: build HTML5"
+		}
+	]
+}
